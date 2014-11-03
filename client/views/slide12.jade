@@ -1,23 +1,12 @@
 template(name='slide12')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 100]' target='header'
-      h2 Meetup Famous - The finish, the bubbles
+      h2 Now it's your turn!
     +Surface size='[900, undefined]' align='[.5, .5]' origin='[.5, .5]' target='content'
-      p.left Now, adding our bubbles
-        code client/view/bubblebox.coffee
-        |  :
-      +prism language='coffeescript' class='line-numbers'
-        | ...
-        | DEFAULT_OPTIONS:
-        |   numBodies: 5
-        |   ...
-        | constructor: (@options) ->
-        |   ...
-        |   @addBubbles()
-        | ...
-        | addBubbles: ->
-        |   [0...@options.numBodies].map (i) =>
-        |     famous.utilities.Timer.setTimeout (@addBubble.bind @, i)
-        |     , (i + 1) * 500
+      h3 Let's install Meteor
+
+
     +Surface size='[undefined, 70]' target='footer'
-      p PEM
+      p
+        small
+          a(href='http://ctt.ec/coc4r') Share this slide

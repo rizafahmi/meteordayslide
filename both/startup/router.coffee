@@ -12,7 +12,6 @@
   { path: '/slide10' }
   { path: '/slide11' }
   { path: '/slide12' }
-  { path: '/slide13' }
   { path: '/end' }
 ]
 

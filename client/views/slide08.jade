@@ -1,24 +1,16 @@
 template(name='slide08')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 100]' target='header'
-      h2 Meetup Famous - Bubbles
+      h2 Workpop – Built on Meteor
     +Surface size='[900, undefined]' align='[.5, .5]' origin='[.5, .5]' target='content'
-      p.left Our bubbles
-        code client/views/bubble.coffee
-        |  :
-      +prism language='coffeescript' class='line-numbers'
-        | class @Bubble
-        |   constructor: ->
-        |     radius = famous.math.Random.integer 20, 60
-        |     @shape = new famous.core.Surface
-        |       size: [radius * 2, radius * 2]
-        |       classes: ['bubble-bluebubble']
-        |       properties: borderRadius: CSSC.x radius
-        |     @body = new famous.physics.bodies.Circle
-        |       radius: radius
-        |       mass: radius / 10
-        |     @mod = new famous.core.Modifier
-        |       origin: [.5, .5]
-        |       align: [.5, .5]
+      p.center 
+        img(src="http://pandodaily.files.wordpress.com/2014/09/screen-shot-2014-09-16-at-12-28-02-pm.jpg?w=1024&h=596" width="450")
+
+      p.center Raised $7.9 million Series A led by Trinity Ventures
+      p.center Trinity Ventures funding announcement: "most rapid prototyping, iteration and development we've ever seen from an early stage company"
+
+
     +Surface size='[undefined, 70]' target='footer'
-      p PEM
+      p
+        small
+          a(href='http://ctt.ec/coc4r') Share this slide

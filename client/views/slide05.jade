@@ -1,23 +1,19 @@
 template(name='slide05')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 100]' target='header'
-      h2 Meetup Famous - Styling
+      h2 Meteor is platform
     +Surface size='[900, undefined]' align='[.5, .5]' origin='[.5, .5]' target='content'
-      p.left Optional, to simplify interactions with Famo.us, styles are written in CoffeeScript
-        code client/styles/maincss.coffee
-        | :
-      +prism language='coffeescript' class='line-numbers'
-        | css = new CSSC
-        | css.add 'html',
-        |   backgroundColor: CSSC.orange
-        | css.add '.bubble-main-box',
-        |   backgroundColor: CSSC.yellow
-        |   borderRadius: '8px'
-        | css.add '.bubble-bluebubble',
-        |   backgroundColor: CSSC.aqua
-        |   border: '3px solid ' + CSSC.blue
-        | css.add '.bubble-dragger',
-        |   backgroundColor: 'rgba(255, 255, 255, .5)'
-        |   border: '2px solid ' + CSSC.red
+      p.left It's complete platform to make modern apps, not just a library to solve one problem.
+      ul
+        li Livequery – watch DB queries
+        li DDP – send data back and forth to the client
+        li Minimongo – store data and do DB queries on the client
+        li Tracker – the thing that enables reactive updates
+        li Blaze – rendering the view based on Tracker
+      p.left Read about all of this on the Projects page
+        a(href="https://meteor.com/projects") meteor.com/projects
+
     +Surface size='[undefined, 70]' target='footer'
-      p PEM
+      p
+        small
+          a(href='http://ctt.ec/coc4r') Share this slide

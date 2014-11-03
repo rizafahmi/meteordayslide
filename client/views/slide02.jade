@@ -1,20 +1,14 @@
 template(name='slide02')
   +HeaderFooterLayout size='[undefined, undefined]'
     +Surface size='[undefined, 100]' target='header'
-      h2 Meetup Famous - Bower and Git
+      h2 What Is Meteor
     +Surface size='[900, undefined]' align='[.5, .5]' origin='[.5, .5]' target='content'
-      p.left Prepare the imports
-        code lib/smart.require
-        | :
-      +prism language='javascript' class='line-numbers'
-        | {
-        | 	"famous": {
-        | 		"git": "https://github.com/Famous/famous.git",
-        | 		"root": "src"
-        | 	}
-        | }
-      P.left Launch Meteor :
-      +prism language='bash' class='line-numbers'
-        | meteor
+      p.center Open-source platform for 
+        strong building web and mobile apps in JavaScript
+      p.center Built to power the <strong>next generation of apps</strong>: Rich user interfaces, Collaborative multi-user applications, Cross platform apps, 
+        strong Fast development
+
     +Surface size='[undefined, 70]' target='footer'
-      p PEM
+      p
+        small
+          a(href='http://ctt.ec/coc4r') Share this slide
